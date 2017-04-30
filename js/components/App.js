@@ -4,6 +4,7 @@ import {
   StyleSheet
 } from 'react-native';
 import Episodes from './Episodes';
+import SliderBar from './SliderBar';
 import Player from './Player';
 import Status from './Status';
 
@@ -17,8 +18,9 @@ class App extends Component {
     return(
       <View style={styles.container}>
         <Episodes />
-        <Player />
+        <SliderBar styles={styles} />
         <Status />
+        <Player />
       </View>
     );
   }
@@ -28,9 +30,11 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF'
+  },
+  block: {
+    flex: 1,
+    justifyContent: 'center',
   }
 });
 

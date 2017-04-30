@@ -25,7 +25,8 @@ const soundReducer = (state = initialState, action) => {
       state = { 
         ...state,
         fetching: false,
-        error: true };
+        error: true,
+        sound: undefined };
       break;
     case 'PLAY_PAUSE':
       state = {
