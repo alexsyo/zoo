@@ -26,14 +26,12 @@ export const playPause = (status) => {
   };
 };
 
-export const fetchSound = (day) => {
-  return (dispatch) => {
-    const url = `http://scarlet.virtualcms.it/upload/uploadedContent/repliche/zoo/${day}_ZOO.mp3`;
-    dispatch(fetchStart());
-    
-    const sound = new Sound(url, '', (err) => {
-      if(err) return dispatch(fetchError());
-      dispatch(setSound(sound));
-    });
-  };
+export const fetchSound = (day) => (dispatch) => {
+  const url = `http://scarlet.virtualcms.it/upload/uploadedContent/repliche/zoo/${day}_ZOO.mp3`;
+  dispatch(fetchStart());
+  
+  const sound = new Sound(url, '', (err) => {
+    if(err) return dispatch(fetchError());
+    dispatch(setSound(sound));
+  });
 };
