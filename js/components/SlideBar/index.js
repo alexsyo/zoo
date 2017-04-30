@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import { connect } from 'react-redux';
 
-class SliderBar extends Component {
+class SlideBar extends Component {
 
   constructor(props) {
     super(props);
@@ -43,4 +43,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, null)(SliderBar);
+export default connect(mapStateToProps, null)(SlideBar);
