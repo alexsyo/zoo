@@ -1,6 +1,6 @@
 const WEEK = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
 
-const formatDate = (date) => {
+export const formatDate = (date) => {
   const dayName = WEEK[date.getDay()];
   const day = formatNumber(date.getDate());
   const month = formatNumber(date.getMonth() + 1);

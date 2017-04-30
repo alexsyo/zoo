@@ -4,6 +4,7 @@ import {
   StyleSheet
 } from 'react-native';
 import Episodes from './Episodes';
+import DatePicker from './DatePicker';
 import SlideBar from './SlideBar';
 import Player from './Player';
 import Status from './Status';
@@ -18,6 +19,7 @@ class App extends Component {
     return(
       <View style={styles.container}>
         <Episodes />
+        <DatePicker />
         <SlideBar styles={styles} />
         <Status />
         <Player />
